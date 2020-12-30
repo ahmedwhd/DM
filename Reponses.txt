@@ -1,11 +1,42 @@
-Etape 20 ´
 
-Relancez l’application, retournez sur la console H2 : http://localhost:8080/h2-console.
-Faites une requˆete de type SELECT sur la table Address. Voyez-vous tout le contenu de
-data.sql ? Ajoutez la reponse dans le README.
-En faisant une requete de  type SELECT sur la table Address, on aprecois le contenu de
-data.sql (les 2 éléments ajouter à la base de donnée).
+Etape 13 )
+ Relisez le code du contrôleur, aidez-vous de documentation sur internet, et répondez aux questions suivantes : 
+1. Avec quelle partie du code avons-nous paramétré l’url d’appel /greeting ?
+
+Avec le @GetMapping ("/ greeting "), nous  avons paramétré l’url d’appel
+
+ 2. Avec quelle partie du code avons-nous choisi le fichier HTML `à afficher ? 
+
+Nous  avons choisi le fichier HTML à afficher avec le return " greeting "
+
+3. Comment envoyons-nous le nom à qui nous disons bonjour avec le second lien ?
+
+On envoie le nom de la personne avec => model . addAttribute (" nomTemplate ", nameGET ) ( on fait un binding du nameGET  avec nomTemplate qu’on utilise et affiche dans le fichier HTML)
+
+Etape 17 )  Relancez votre application, retournez sur la console de H2 : http://localhost:8080/ h2-console. Avez-vous remarqué une différence ? Ajoutez la réponse dans le README.
+On remarque l’apparition d’une table ADDRESS sur la base de données.
+ 
+ Étape 20)
+
+captures 3 et 4 dans le dossier "captures"
+
 
 Etape 23 
 
-L’annotation @Autowired permet de faire l’injection de dépendances entre les beans de l’application, le conteneur Spring va creer le bean, le chercher et l’injecter automatiquement.
+L’annotation @Autowired permet de faire l’injection de dépendances entre les beans de l’application, le conteneur Spring va créer le bean, le chercher et l’injecter automatiquement.
+
+Etape 30)
+ Expliquez la méthode que vous avez utilisée pour ajouter Bootstrap dans le README. 
+J’ai ajouté les dépendances bootstrap, jquery et popper dans le POM.
+
+Etape 6)
+Mettez la réponse à chacune de ces questions dans le README de votre projet : 
+-Faut-il une clé API pour appeler OpenWeatherMap ? Oui
+-Quelle URL appeler ? Il faut appeler l’url avec les coordonnées de la ville.
+ - Quelle méthode HTTP utiliser ? "https://api.openweathermap.org/data/2.5/weather?lat=" + lat + "&lon=" + lon + "&appid="+ apiKey + "&units=metric";
+ -Comment passer les paramètres d`appels ? Il faut les passer via l’url 
+ -Ou est l’information dont j’ai besoin dans la réponse :
+ -Pour afficher la température du lieu visé par les coordonnées GPS
+Dans une classe (attribut LinkedHashMap) qui accueille les données récupérées par l’url de la météo 
+ -Pour afficher la prévision de météo du lieu visé par les coordonnées GPS
+Dans une classe (attribut ArrayList) qui accueille les données récupérées par l’url de la météo 
