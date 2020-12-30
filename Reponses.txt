@@ -32,8 +32,8 @@ J’ai ajouté les dépendances bootstrap, jquery et popper dans le POM.
 Etape 6)
 Mettez la réponse à chacune de ces questions dans le README de votre projet : 
 -Faut-il une clé API pour appeler OpenWeatherMap ? Oui
--Quelle URL appeler ? Il faut appeler l’url avec les coordonnées de la ville.
- - Quelle méthode HTTP utiliser ? "https://api.openweathermap.org/data/2.5/weather?lat=" + lat + "&lon=" + lon + "&appid="+ apiKey + "&units=metric";
+-Quelle URL appeler ? Il faut appeler l’url avec les coordonnées de la ville : "https://api.openweathermap.org/data/2.5/weather?lat=" + lat + "&lon=" + lon + "&appid="+ apiKey + "&units=metric";
+ - Quelle méthode HTTP utiliser ? Methode get : "https://api.openweathermap.org/data/2.5/weather?lat=" + lat + "&lon=" + lon + "&appid="+ apiKey + "&units=metric";
  -Comment passer les paramètres d`appels ? Il faut les passer via l’url 
  -Ou est l’information dont j’ai besoin dans la réponse :
  -Pour afficher la température du lieu visé par les coordonnées GPS
